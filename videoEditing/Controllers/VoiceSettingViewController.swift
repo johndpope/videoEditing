@@ -188,25 +188,7 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
       // 5
       dismiss(animated: true, completion: nil)
     }
-    
-    
-//
-//    func savedPhotosAvailable() -> Bool {
-//      guard UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
-//        else { return true }
-//
-//      let alert = UIAlertController(
-//        title: "Not Available",
-//        message: "No Saved Album found",
-//        preferredStyle: .alert)
-//      alert.addAction(UIAlertAction(
-//        title: "OK",
-//        style: UIAlertAction.Style.cancel,
-//        handler: nil))
-//      present(alert, animated: true, completion: nil)
-//      return false
-//    }
-    
+
     func mergeFilesWithUrl(videoUrl:NSURL, audioUrl:NSURL)
     {
         
@@ -238,9 +220,7 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
             try mutableCompositionAudioTrack[0].insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: aVideoAssetTrack.timeRange.duration), of: aAudioAssetTrack, at: CMTime.zero)
             
             //Use this instead above line if your audiofile and video file's playing durations are same
-//
-//            try mutableCompositionAudioTrack[0].insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: aAudioAssetTrack.timeRange.duration), of: aAudioAssetTrack, at: kCMTimeZero)
-            
+
         }catch{
             
         }
@@ -251,14 +231,7 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
         mutableVideoComposition.frameDuration = CMTimeMake(value: 1, timescale: 30)
         
         mutableVideoComposition.renderSize = CGSize(width: 1280, height: 720)
-        
 
-        
-        //        playerItem = AVPlayerItem(asset: mixComposition)
-        //        player = AVPlayer(playerItem: playerItem!)
-        //
-        //
-        //        AVPlayerVC.player = player
         
         //find your video on this URl
         let savePathUrl : NSURL = NSURL(fileURLWithPath: NSHomeDirectory() + "/Documents/newVideo.mp4")
@@ -281,12 +254,6 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
         
         
         let videoos=UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: savePathUrl), forKey: "pathUrl")
-        print(videoos)
-
-        
-        
-        
-        
 
         assetExport.exportAsynchronously { () -> Void in
             switch assetExport.status {
@@ -296,12 +263,7 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
                 //Uncomment this if u want to store your video in asset
                 
                 let assetsLib = ALAssetsLibrary()
-//    
-//                assetsLib.writeVideoAtPath(toSavedPhotosAlbum: savePathUrl as URL, completionBlock: nil)
-                
-                
-                
-                
+
                 SVProgressHUD.dismiss {
 
                     self.dismiss(animated: true) {
@@ -312,9 +274,7 @@ class VoiceSettingViewController: UIViewController, UIGestureRecognizerDelegate,
                 }
 
                 print("success")
-//                DispatchQueue.main.async {
-//                  self.exportDidFinish(assetExport)
-//                }
+//
              case  AVAssetExportSessionStatus.failed:
                 print("failed \(assetExport.error)")
             case AVAssetExportSessionStatus.cancelled:

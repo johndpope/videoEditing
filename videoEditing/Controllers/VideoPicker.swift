@@ -65,10 +65,7 @@ extension VideoPicker: UIImagePickerControllerDelegate {
         guard let url = info[.mediaURL] as? URL else {
             return self.pickerController(picker, didSelect: nil)
         }
-//        //uncomment this if you want to save the video file to the media library
-//        if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path) {
-//            UISaveVideoAtPathToSavedPhotosAlbum(url.path, self, nil, nil)
-//        }
+
         self.pickerController(picker, didSelect: url)
     }
     

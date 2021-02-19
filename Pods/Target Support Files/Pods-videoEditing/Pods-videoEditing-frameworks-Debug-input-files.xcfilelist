@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-videoEditing/Pods-videoEditing-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
+${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework

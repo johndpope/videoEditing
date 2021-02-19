@@ -48,10 +48,7 @@ class VideoTableViewController: UIViewController {
             }
         }
         
-//        present(activityController, animated: true) {
-//            print("presented")
-//        }
-        
+
     }
     // MARK: - Table view data source
     
@@ -97,19 +94,6 @@ extension VideoTableViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
           
-//    func shareToInstagramStories(image: UIImage) {
-//        // NOTE: you need a different custom URL scheme for Stories, instagram-stories, add it to your Info.plist!
-//        guard let instagramUrl = URL(string: "instagram-stories://share") else {
-//            return
-//        }
-//        if UIApplication.shared.canOpenURL(instagramUrl) {
-//            let pasterboardItems = [["com.instagram.sharedSticker.backgroundImage": image as Any]]
-//            UIPasteboard.general.setItems(pasterboardItems)
-//            UIApplication.shared.open(instagramUrl)
-//        } else {
-//            // Instagram app is not installed or can't be opened, pop up an alert
-//        }
-//    }
 
 extension VideoTableViewController:urlSharingDelegate{
     func url(video: [NSURL]) {

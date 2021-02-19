@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="216" id="KGk-i7-Jjw" customClass="VideoTableViewCell" customModule="videoEditing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eaq-I7-JGB" customClass="UIViewCustomCornerRadius" customModule="videoEditing" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="240"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VMQ-GH-k9q">
+                                <rect key="frame" x="0.0" y="0.0" width="344" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JW-Kk-jDM">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="228"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TTX-Zj-TWt">
+                                                <rect key="frame" x="30" y="10" width="256" height="208"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDV-c6-iiq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="208"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thE-4c-wPi" customClass="UIViewCustomCornerRadius" customModule="videoEditing" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="256" height="208"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCorner">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCorner">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCorner">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCorner">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-XJ-gCU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="246" height="208"/>
+                                                                <state key="normal" image="pla"/>
+                                                                <connections>
+                                                                    <action selector="playBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kbb-8D-F0R"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="VUH-XJ-gCU" secondAttribute="bottom" id="6Up-tb-Jc7"/>
+                                                            <constraint firstItem="thE-4c-wPi" firstAttribute="leading" secondItem="DDV-c6-iiq" secondAttribute="leading" id="9by-eE-7dj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="thE-4c-wPi" secondAttribute="trailing" id="KDP-fZ-5Pi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="thE-4c-wPi" secondAttribute="bottom" id="QI6-3E-zkE"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VUH-XJ-gCU" secondAttribute="trailing" constant="10" id="RcA-ub-S8Z"/>
+                                                            <constraint firstItem="VUH-XJ-gCU" firstAttribute="leading" secondItem="DDV-c6-iiq" secondAttribute="leading" id="aHD-XC-zc8"/>
+                                                            <constraint firstItem="thE-4c-wPi" firstAttribute="top" secondItem="DDV-c6-iiq" secondAttribute="top" id="nUb-4U-bq2"/>
+                                                            <constraint firstItem="VUH-XJ-gCU" firstAttribute="top" secondItem="DDV-c6-iiq" secondAttribute="top" id="ywJ-9m-1Yh"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="DDV-c6-iiq" firstAttribute="top" secondItem="TTX-Zj-TWt" secondAttribute="top" id="Krf-Rb-ZIZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DDV-c6-iiq" secondAttribute="trailing" id="OTT-OZ-q4B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DDV-c6-iiq" secondAttribute="bottom" id="UlN-Ch-0sX"/>
+                                                    <constraint firstItem="DDV-c6-iiq" firstAttribute="leading" secondItem="TTX-Zj-TWt" secondAttribute="leading" id="hiA-Xy-6gV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-4G-Acj">
+                                                <rect key="frame" x="286" y="10" width="58" height="208"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgh-z6-Krj">
+                                                        <rect key="frame" x="4" y="45" width="52" height="53"/>
+                                                        <state key="normal" image="send"/>
+                                                        <connections>
+                                                            <action selector="send:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ah2-ZV-0Ot"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNl-td-yzW" customClass="UIViewCustomCornerRadius" customModule="videoEditing" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="98" width="52" height="70"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-wC-aEW">
+                                                                <rect key="frame" x="26" y="35" width="0.0" height="0.0"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Color4"/>
+                                                        <constraints>
+                                                            <constraint firstItem="TfK-wC-aEW" firstAttribute="centerX" secondItem="xNl-td-yzW" secondAttribute="centerX" id="cSC-Ai-LtJ"/>
+                                                            <constraint firstItem="TfK-wC-aEW" firstAttribute="centerY" secondItem="xNl-td-yzW" secondAttribute="centerY" id="yWb-Zb-TFg"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topLeftCorner">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCorner">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topRightCorner">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCorner">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="5dH-n7-sbC"/>
+                                                </constraints>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="45" leading="4" bottom="40" trailing="2"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TTX-Zj-TWt" firstAttribute="top" secondItem="0JW-Kk-jDM" secondAttribute="top" constant="10" id="NXZ-Qf-ZYO"/>
+                                            <constraint firstItem="TTX-Zj-TWt" firstAttribute="leading" secondItem="0JW-Kk-jDM" secondAttribute="leading" constant="20" id="aUo-Qe-yjK"/>
+                                            <constraint firstAttribute="bottom" secondItem="TTX-Zj-TWt" secondAttribute="bottom" constant="10" id="gWY-Aa-vK0"/>
+                                            <constraint firstItem="U3Z-4G-Acj" firstAttribute="leading" secondItem="TTX-Zj-TWt" secondAttribute="trailing" id="z3Y-BZ-aIO"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="30" bottom="10" trailing="0.0"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-0H-R63">
+                                        <rect key="frame" x="0.0" y="228" width="344" height="12"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Color6"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VMQ-GH-k9q" secondAttribute="bottom" id="F1t-kV-4Tg"/>
+                            <constraint firstItem="VMQ-GH-k9q" firstAttribute="leading" secondItem="Eaq-I7-JGB" secondAttribute="leading" id="aAH-Hu-4oh"/>
+                            <constraint firstItem="VMQ-GH-k9q" firstAttribute="top" secondItem="Eaq-I7-JGB" secondAttribute="top" id="de8-EY-vuY"/>
+                            <constraint firstAttribute="trailing" secondItem="VMQ-GH-k9q" secondAttribute="trailing" id="gwT-SG-HDX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topLeftCorner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCorner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topRightCorner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCorner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Eaq-I7-JGB" secondAttribute="bottom" id="3av-Mg-QGN"/>
+                    <constraint firstItem="Eaq-I7-JGB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5oB-fZ-fSS"/>
+                    <constraint firstAttribute="trailing" secondItem="Eaq-I7-JGB" secondAttribute="trailing" id="bmq-IW-mX9"/>
+                    <constraint firstItem="Eaq-I7-JGB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kvc-pG-mjt"/>
+                    <constraint firstItem="0JW-Kk-jDM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.95" id="rBZ-95-Gbc"/>
+                    <constraint firstItem="hqd-0H-R63" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.05" id="uB1-Un-tPI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="num" destination="TfK-wC-aEW" id="nS6-ud-Zhe"/>
+                <outlet property="playButton" destination="VUH-XJ-gCU" id="K7l-4B-YLP"/>
+                <outlet property="videoPlayer" destination="thE-4c-wPi" id="BM8-mP-RQv"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="41.517857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pla" width="28" height="32"/>
+        <image name="send" width="53" height="53"/>
+        <namedColor name="Color4">
+            <color red="0.58399999141693115" green="0.59200000762939453" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color6">
+            <color red="0.43900001049041748" green="0.43900001049041748" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

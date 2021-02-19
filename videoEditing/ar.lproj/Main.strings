@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "0B2-zb-F34"; */
+"0B2-zb-F34.text" = "المدة";
+
+/* Class = "UILabel"; text = "All clips are muted"; ObjectID = "0Bp-zk-TSH"; */
+"0Bp-zk-TSH.text" = "كتم صوت الفيديو";
+
+/* Class = "UILabel"; text = "16:9"; ObjectID = "0qk-mZ-k8p"; */
+"0qk-mZ-k8p.text" = "16:9";
+
+/* Class = "UILabel"; text = "Tube"; ObjectID = "0vC-Tc-d2u"; */
+"0vC-Tc-d2u.text" = "يوتيوب";
+
+/* Class = "UILabel"; text = "9:16"; ObjectID = "8xa-ow-SL3"; */
+"8xa-ow-SL3.text" = "9:16";
+
+/* Class = "UILabel"; text = "Voice"; ObjectID = "Cyc-A4-zNd"; */
+"Cyc-A4-zNd.text" = "الصوت";
+
+/* Class = "UILabel"; text = "Sound control settings"; ObjectID = "EWF-bh-68X"; */
+"EWF-bh-68X.text" = "اعدادات التحكم في الصوت";
+
+/* Class = "UILabel"; text = "Story"; ObjectID = "SmV-L0-jV9"; */
+"SmV-L0-jV9.text" = "قصة";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "VAa-U3-xEp"; */
+"VAa-U3-xEp.normalTitle" = "إنهاء";
+
+/* Class = "UILabel"; text = "Story"; ObjectID = "ajf-fb-BM5"; */
+"ajf-fb-BM5.text" = "القصة";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "cQI-GO-p46"; */
+"cQI-GO-p46.text" = "0";
+
+/* Class = "UILabel"; text = "Smooth cutting hide\nthe places of cutting."; ObjectID = "cUa-vv-etB"; */
+"cUa-vv-etB.text" = "Smooth cutting hide\nthe places of cutting.";
+
+/* Class = "UILabel"; text = "1:1"; ObjectID = "dk8-Fl-M9X"; */
+"dk8-Fl-M9X.text" = "1:1";
+
+/* Class = "UILabel"; text = "Feed"; ObjectID = "jfU-Eh-9Gx"; */
+"jfU-Eh-9Gx.text" = "المنشور";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "kFZ-cy-d8j"; */
+"kFZ-cy-d8j.normalTitle" = "إنهاء";
+
+/* Class = "UILabel"; text = "4:5"; ObjectID = "kL2-9f-vc7"; */
+"kL2-9f-vc7.text" = "4:5";
+
+/* Class = "UILabel"; text = "0s"; ObjectID = "pEy-8r-WvY"; */
+"pEy-8r-WvY.text" = "0s";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "rKC-Kx-kVZ"; */
+"rKC-Kx-kVZ.text" = "00:00";
+
+/* Class = "UILabel"; text = " 0 m"; ObjectID = "xLm-VQ-DYP"; */
+"xLm-VQ-DYP.text" = " 0 m";
+
+/* Class = "UILabel"; text = "Videos"; ObjectID = "xOa-C9-qq4"; */
+"xOa-C9-qq4.text" = "الفيديوهات";
+
+/* Class = "UILabel"; text = "Add Sound and will be\ncut with sections"; ObjectID = "yN7-gK-2Lg"; */
+"yN7-gK-2Lg.text" = "اضافة صوت للفيديو";
+
+/* Class = "UILabel"; text = "Size "; ObjectID = "ytD-YW-OUs"; */
+"ytD-YW-OUs.text" = "حجم الفيديو ";
